@@ -8,8 +8,7 @@
     Vaše střecha, náš problém!
     <br>
     <br>
-    <a href="https://marvelousmartin.github.io/jirfa"><strong>GitHub Pages demo stránka</strong></a><br>
-    <a><strong>V přípravě</strong></a>
+    <a href="https://marvelousmartin.github.io/thesis-deploy"><strong>GitHub Pages demo stránka</strong></a><br>
   </p>
 </p>
 
@@ -20,8 +19,7 @@
 ### Frameworky
 
 Následující frameworky budou použity v bakalářské práci:
-* [Bootstrap](https://getbootstrap.com)
-* [jQuery](https://jquery.com)
+* [Bootstrap 5](https://getbootstrap.com)
 
 ## Licence
 
@@ -36,9 +34,8 @@ Martin Dub - [LinkedIn](https://www.linkedin.com/in/martin-dub/)
 <!-- ACKNOWLEDGEMENTS -->
 ## Poděkování
 * [GitHub Pages](https://pages.github.com)
-* [Line Icons](https://lineicons.com)
+* [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com)
-* [Lord Icons](https://lordicon.com/icons)
 
 
 
