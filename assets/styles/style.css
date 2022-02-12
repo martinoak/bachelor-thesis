@@ -37,3 +37,18 @@ nav {
 nav #logo {
     width: 10rem;
 }
+
+/* -------------- FOOTER -------------- */
+footer {
+
+}
+
+footer img {
+    max-width: 5rem;
+}
+
+.copyright {
+    padding: 23px 0; }
+.copyright .text {
+    color: #6c6c6c;
+    font-size: 20px }
