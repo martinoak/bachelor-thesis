@@ -29,8 +29,16 @@ img {
     color: #dc3545 !important;
 }
 
+.bg-primary {
+    background-color: #dc3545 !important;
+}
+
 .color-secondary {
     color: #0066ff;
+}
+
+.bg-secondary {
+    background-color: #0066ff;
 }
 
 .title {
@@ -120,6 +128,12 @@ nav #logo {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
+/* -------------- KONTAKTY -------------- */
+.lst-none {
+    list-style-type: none;
+}
+
 /* -------------- FOOTER -------------- */
 footer {
 

@@ -22,7 +22,7 @@
 
 </head>
 <body>
-<header role="">
+<header role="banner">
     <!-- Navigace -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container d-flex align-items-start">
@@ -57,7 +57,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Kontakt</a>
+                        <a class="nav-link" aria-current="page" href="#kontakt">Kontakt</a>
                     </li>
                     <!--
                     <hr class="dropdown-divider">
@@ -76,7 +76,7 @@
             <h1 class="header-title">Vaše střecha je náš problém!</h1>
             <h2>
                 <a class="reference-button text-decoration-none inline-d-flex align-items-center shadow-sm" href="#">
-                    Naše reference <i class="far fa-caret-right ms-2"></i></i> <!-- TODO na hover se text modrá -->
+                    Naše reference <i class="far fa-caret-right ms-2"></i> <!-- TODO na hover se text modrá -->
                 </a>
             </h2>
         </div>
@@ -215,9 +215,88 @@
 
 <section id="kontakt" class="contact-area">
     <div class="container">
-        <h3 class="font-weight-bold title">Kontakty</h3> <!-- TODO Dodělat -->
-        <br />
-        <div style="padding-top: 500px"></div>
+        <h3 class="font-weight-bold title">Kontakty</h3>
+        <div class="row">
+            <div class="col-5">
+                <ul class="lst-none p-0">
+                    <li>JIRFA, s.r.o.</li>
+                    <li><strong>V Rovinách 55</strong></li>
+                    <li><strong>140 00</strong></li>
+                    <li><strong>Praha 4</strong></li>
+                    <li><a href="https://jirfa.cz" class="text-decoration-none color-secondary">
+                        <i class="fas fa-globe color-secondary me-2"></i>
+                        jirfa.cz
+                        </a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="#" class="text-decoration-none"><i class="fas fa-map-marker-alt me-2"></i> Zobrazit mapu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 ps-3">
+                <div class="mb-3">
+                    <a><strong>Jednatelé:</strong></a>
+                </div>
+                <div class="mb-3">
+                    <ul class="lst-none p-0">
+                        <li>Jiří Šteker</li>
+                        <li><i class="fas fa-phone-alt color-primary"></i>
+                            <a href="tel:+420606094834" class="color-primary">+420 606 094 834</a></li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <ul class="lst-none p-0" style="list-style-position: outside">
+                        <li>František Doubek</li>
+                        <li><i class="fas fa-phone-alt color-primary"></i>
+                            <a href="tel:+420603269054" class="color-primary">+420 603 269 054</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-6 d-none d-md-block"> <!-- U menších zobrazení se mapa nebude zobrazovat -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.2016275805154!2d14.43143851593333!3d50.04505412437277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b940bab0bd0e1%3A0x3649bd01eb944614!2sV%20Rovin%C3%A1ch%2055%2C%20140%2000%20Praha%204!5e0!3m2!1scs!2scz!4v1644771196755!5m2!1scs!2scz"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-12 col-md-6">
+                <h4>Ozvěte se nám!</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <label for="name">Vaše jméno a příjmení</label>
+                            <input type="text" class="form-control" id="name" placeholder="Jan Novák">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <label for="inputEmail4">Váš e-mail</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="jan@novak.cz">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-10">
+                        <label for="tel">Váš telefon</label>
+                        <input type="text" class="form-control" id="tel" placeholder="+420 123 456 789">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-7">
+                            <label for="inputCity">Město</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="text">Text zprávy</label>
+                            <textarea type="text" rows="5" class="form-control" id="text" placeholder="Dobrý den!"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-primary border-0 mt-3" role="button">Odeslat e-mail</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -229,7 +308,7 @@
             <div class="row d-flex">
                 <div class="copyright">
                     <p class="text"><img src="assets/images/logo.png" alt="Logo">
-                        <strong>&copy;</strong> <script>document.write(/\d{4}/.exec(Date())[0])</script> Martin Dub
+                        <strong>&copy;</strong> <script>document.write(/\d{4}/.exec(Date())[0])</script> Martin Dub, JIRFA s.r.o.
                     </p>
                 </div>
             </div>
