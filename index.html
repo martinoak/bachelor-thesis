@@ -4,7 +4,9 @@
     <!-- Povinné meta tagy -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Stavební firma JIRFA s.r.o. | Vaše střecha je náš problém!">
 
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -25,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid d-flex">
             <a class="navbar-brand" href="#">
-                <img id="logo" src="assets/images/logo.png">
+                <img id="logo" src="assets/images/logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,10 +37,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#services">Služby</a>
+                        <a class="nav-link" aria-current="page" href="#sluzby">Služby</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Certifikáty</a>
+                        <a class="nav-link" aria-current="page" href="#certifikaty">Certifikáty</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,15 +73,15 @@
         <div class="text-center">
             <h1 class="header-title">Vaše střecha je náš problém!</h1>
             <h2>
-                <a class="reference-button text-decoration-none" href="#reference">
-                    Naše reference <i class="far fa-caret-right"></i>
+                <a class="reference-button text-decoration-none" href="#">
+                    Naše reference <i class="far fa-caret-right"></i></i> <!-- TODO na hover se text modrá -->
                 </a>
             </h2>
         </div>
     </div>
 </header>
 
-<section id="services" class="services-area">
+<section id="sluzby" class="services-area">
     <div class="container">
         <h3 class="font-weight-bold title">Čím se zabýváme</h3>
         <div class="pt-4">
@@ -138,12 +140,50 @@
     </div>
 </section>
 
+<section id="certifikaty" class="certificate-area">
+    <!-- TODO Pro certifikáty ještě přijde modal okno, pro lepší zobrazení jednotlivých certifikátů -->
+    <!-- TODO Přes administraci vykreslovat jednotlivé certifikáty -->
+    <div class="container">
+        <h3 class="font-weight-bold title">Certifikáty</h3>
+        <div class="row justify-content-around">
+            <!-- style="cursor: zoom-in" byl zvolen pro lepší pochopení se s návštěvníkem -->
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer id="footer">
     <hr>
     <div class="text-center">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex">
                 <div class="copyright">
                     <p class="text"><img src="assets/images/logo.png" alt="Logo">
                         <strong>&copy;</strong> <script>document.write(/\d{4}/.exec(Date())[0])</script> Martin Dub
