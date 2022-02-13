@@ -25,7 +25,7 @@
 <header role="">
     <!-- Navigace -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid d-flex">
+        <div class="container d-flex align-items-start">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/logo.png" alt="Logo">
             </a>
@@ -59,10 +59,12 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Kontakt</a>
                     </li>
+                    <!--
                     <hr class="dropdown-divider">
                     <li class="nav-item">
                         <a class="nav-link color-primary" aria-current="page" href="#">Administrace</a>
                     </li>
+                    -->
                 </ul>
             </div>
         </div>
@@ -73,8 +75,8 @@
         <div class="text-center">
             <h1 class="header-title">Vaše střecha je náš problém!</h1>
             <h2>
-                <a class="reference-button text-decoration-none" href="#">
-                    Naše reference <i class="far fa-caret-right"></i></i> <!-- TODO na hover se text modrá -->
+                <a class="reference-button text-decoration-none inline-d-flex align-items-center shadow-sm" href="#">
+                    Naše reference <i class="far fa-caret-right ms-2"></i></i> <!-- TODO na hover se text modrá -->
                 </a>
             </h2>
         </div>
@@ -136,7 +138,6 @@
                 </div>
             </div>
         </div>
-        <hr style="margin-top: 50px"> <!-- Byl použit margin-top, protože padding-top by změnil výšku elementu -->
     </div>
 </section>
 
@@ -175,6 +176,48 @@
                 <img src="assets/images/certificates/mockup.png" class="certificate-img" alt="Certifikát"><hr>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="reference" class="reference-area">
+    <div class="container">
+        <h3 class="font-weight-bold title">Reference</h3> <!-- TODO Dodělat -->
+        <br />
+        <div style="padding-top: 500px"></div>
+    </div>
+</section>
+
+<section id="dodavatele" class="dodavatele-area">
+    <div class="container">
+        <h3 class="font-weight-bold title">Partneři a dodavatelé</h3> <!-- TODO Dodělat -->
+        <div class="row dodavatele justify-content-around">
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="assets/images/partners/bramac.png" alt="Bramac">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="assets/images/partners/velux.png" alt="Velux">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="assets/images/partners/isover.png" alt="Isover">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="assets/images/partners/rigips.png" alt="Rigips">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="assets/images/partners/dek.png" alt="Rigips">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="assets/images/partners/jaf.png" alt="Rigips">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="contact-area">
+    <div class="container">
+        <h3 class="font-weight-bold title">Kontakty</h3> <!-- TODO Dodělat -->
+        <br />
+        <div style="padding-top: 500px"></div>
     </div>
 </section>
 
