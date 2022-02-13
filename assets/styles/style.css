@@ -20,22 +20,58 @@ body {
 }
 
 .color-secondary {
-    color: #0d6efd;
+    color: #0066ff;
 }
 
+.title {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+/* -------------- HLAVIČKA -------------- */
 .header-title {
-    padding-bottom: 25px;
-    font-size: 38px;
-    line-height: 55px;
+    padding: 4rem 0;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     color: black;
     font-weight: 800;
 }
+
+/* -------------- NAVIGACE -------------- */
 nav {
     margin: .5rem;
 }
 
 nav #logo {
     width: 10rem;
+}
+
+.reference-button {
+    padding: 1rem 2rem; /* vycentrovani tlacitka */
+    border-radius: 50px;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: -webkit-linear-gradient(left, red, darkred);
+    height: 80px;
+}
+
+/* -------------- SLUŽBY -------------- */
+.services-area {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+.services-detail {
+    padding: 10px;
+}
+
+.services-content .services-icon i {
+    color: #dc3545;
+    font-size: 42px;
+    margin: 1rem 0;
 }
 
 /* -------------- FOOTER -------------- */
@@ -51,4 +87,5 @@ footer img {
     padding: 23px 0; }
 .copyright .text {
     color: #6c6c6c;
-    font-size: 20px }
+    font-size: 20px
+}

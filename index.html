@@ -27,13 +27,15 @@
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/logo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Služby</a>
+                        <a class="nav-link" aria-current="page" href="#services">Služby</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Certifikáty</a>
@@ -68,12 +70,73 @@
     <div class="container-fluid">
         <div class="text-center">
             <h1 class="header-title">Vaše střecha je náš problém!</h1>
-            <a class="text-decoration-none">
-                Naše reference <i class="far fa-caret-right"></i>
-            </a>
+            <h2>
+                <a class="reference-button text-decoration-none" href="#reference">
+                    Naše reference <i class="far fa-caret-right"></i>
+                </a>
+            </h2>
         </div>
     </div>
 </header>
+
+<section id="services" class="services-area">
+    <div class="container">
+        <h3 class="font-weight-bold title">Čím se zabýváme</h3>
+        <div class="pt-4">
+            <p><strong>Stavební firma JIRFA, s.r.o. </strong>se specializuje na dodávky a montáže všech typů střech a krytin, pergol,
+                garážových stání a dřevostaveb, včetně celkových oprav střešních plášťů, pokrývačských a klempířských
+                prací a dále na veškeré sádrokartonářské práce. Také se zaměřujeme na opravu památkově chráněných
+                objektů pod dozorem památkového úřadu.</p>
+        </div>
+        <div class="services-content text-center row d-flex">
+            <div class="services-detail col-6 col-md-4 col-lg-2">
+                <div class="services-icon">
+                    <i class="fas fa-chimney"></i>
+                </div>
+                <h4>Střechy</h4>
+                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+            </div>
+            <div class="services-detail col-6 col-md-4 col-lg-2">
+                <div class="services-icon">
+                    <i class="fas fa-garage-car"></i>
+                </div>
+                <h4>Garáže</h4>
+                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+            </div>
+            <div class="services-detail col-6 col-md-4 col-lg-2">
+                <div class="services-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h4>Podlahy</h4>
+                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+            </div>
+            <div class="services-detail col-6 col-md-4 col-lg-2">
+                <div class="services-icon">
+                    <i class="fas fa-store-alt"></i>
+                </div>
+                <h4>Pergoly</h4>
+                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+            </div>
+            <div class="services-detail col-6 col-md-4 col-lg-2">
+                <div class="services-icon">
+                    <i class="fas fa-triangle"></i>
+                </div>
+                <h4>Štíty</h4>
+                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+            </div>
+            <div class="services-detail col-6 col-md-4 col-lg-2">
+                <div class="services-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="services-content media-body">
+                    <h4>Ostatní</h4>
+                    <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 50px"> <!-- Byl použit margin-top, protože padding-top by změnil výšku elementu -->
+    </div>
+</section>
 
 <!-- Footer -->
 <footer id="footer">
