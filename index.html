@@ -25,7 +25,7 @@
 <body>
 <header role="banner">
     <!-- Navigace -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light"> <!-- TODO href sice odkazuje na sekci, ale nadpis neni videt, nastavit kazdy sekci pt?-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-3"> <!-- TODO href sice odkazuje na sekci, ale nadpis neni videt, nastavit kazdy sekci pt?-->
         <div class="container d-flex align-items-start">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/logo.png" alt="Logo">
@@ -198,9 +198,10 @@
                     <option>Podlahy</option>
                     <option>Pergoly</option>
                     <option>Štíty</option>
+                    <option>Ostatní</option>
                 </select>
         </div>
-        <div style="padding-top: 500px"></div>
+        <div style="padding-top: 500px"></div> <!-- Dočasná mezera -->
     </div>
 </section>
 
@@ -240,12 +241,12 @@
                     <li><strong>V Rovinách 55</strong></li>
                     <li><strong>140 00</strong></li>
                     <li><strong>Praha 4</strong></li>
-                    <li><a href="https://jirfa.cz" class="text-decoration-none color-secondary">
+                    <li><a href="https://jirfa.cz" class="text-decoration-none color-secondary link">
                         <i class="fas fa-globe color-secondary me-2"></i>
                         jirfa.cz
                         </a>
                     </li>
-                    <li class="pt-2 d-block d-md-none">
+                    <li class="pt-2 d-block d-md-none link">
                         <a href="#" class="text-decoration-none"><i class="fas fa-map-marker-alt me-2"></i> Zobrazit mapu</a>
                     </li>
                 </ul>
@@ -258,14 +259,14 @@
                     <ul class="lst-none p-0">
                         <li>Jiří Šteker</li>
                         <li><i class="fas fa-phone-alt color-primary"></i>
-                            <a href="tel:+420606094834" class="color-primary">+420 606 094 834</a></li>
+                            <a href="tel:+420606094834" class="color-primary link">+420 606 094 834</a></li>
                     </ul>
                 </div>
                 <div class="mb-3">
                     <ul class="lst-none p-0" style="list-style-position: outside">
                         <li>František Doubek</li>
                         <li><i class="fas fa-phone-alt color-primary"></i>
-                            <a href="tel:+420603269054" class="color-primary">+420 603 269 054</a></li>
+                            <a href="tel:+420603269054" class="color-primary link">+420 603 269 054</a></li>
                     </ul>
                 </div>
             </div>
@@ -307,7 +308,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="text">Text zprávy</label>
-                            <textarea type="text" rows="5" class="form-control" id="text" placeholder="Dobrý den!"></textarea>
+                            <textarea rows="5" class="form-control" id="text" placeholder="Dobrý den!"></textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary bg-primary border-0 mt-3" role="button">Odeslat e-mail</button>
