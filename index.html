@@ -25,7 +25,7 @@
 <body>
 <header role="banner">
     <!-- Navigace -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-3"> <!-- TODO href sice odkazuje na sekci, ale nadpis neni videt, nastavit kazdy sekci pt?-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-3">
         <div class="container d-flex align-items-start">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/logo.png" alt="Logo">
@@ -201,12 +201,36 @@
                     <option value="ostatni">Ostatní</option>
                 </select>
         </div>
-        <div class="mx-2">
-            <div class="col-2 bg-primary my-5 filterClass strechy">
-                <a>text</a>
-            </div>
-            <div class="col-2 bg-secondary my-5 filterClass garaze">
-                <a>text</a>
+        <!-- TODO Pouze mobile-view -->
+        <!-- TODO Jiné zobrazení pro vyfiltrované položky a všechny položky -->
+        <div class="container d-flex m-auto">
+            <div class="row justify-content-around">
+                <div class="my-5 col-12 col-md-6 col-lg-4 filterClass garaze"> <!-- TODO nefunguje col-sm a col-lg -->
+                    <span class="reference-overlay">
+                        <!-- TODO Vymyslet lépe -->
+                        <div class="reference-desc hide w-100 h-100">
+                            <ul class="lst-none p-0 m-auto">
+                                <li class="fw-bold fs-1">Garáž Praha-Pankrác</li>
+                                <li class="mt-5"><i class="fas fa-search-plus fs-2"></i></li>
+                                <li class="fs-6">Zobrazit</li>
+                            </ul>
+                        </div>
+                        <img src="assets/images/reference/garaze/01.jpg" class="w-100" alt=""/>
+                    </span>
+                </div>
+                <div class="my-5 col-12 col-md-6 col-lg-4 filterClass strechy"> <!-- TODO nefunguje col-sm a col-lg -->
+                    <span class="reference-overlay">
+                        <!-- TODO Vymyslet lépe -->
+                        <div class="reference-desc hide w-100 h-100">
+                            <ul class="lst-none p-0 m-auto">
+                                <li class="fw-bold fs-1">Střecha Kolovraty</li>
+                                <li class="mt-5"><i class="fas fa-search-plus fs-2"></i></li>
+                                <li class="fs-6">Zobrazit</li>
+                            </ul>
+                        </div>
+                        <img src="assets/images/reference/strechy/01.jpg" class="w-100" alt=""/>
+                    </span>
+                </div>
             </div>
         </div>
         <div style="padding-top: 500px"></div> <!-- Dočasná mezera -->
@@ -218,22 +242,22 @@
         <h3 class="font-weight-bold title">Partneři a dodavatelé</h3> <!-- TODO Dodělat -->
         <div class="row dodavatele justify-content-around">
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/bramac.png" alt="Bramac">
+                <img src="assets/images/partners/bramac.png" width="90%" alt="Bramac" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/velux.png" alt="Velux">
+                <img src="assets/images/partners/velux.png" width="90%" alt="Velux" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/isover.png" alt="Isover">
+                <img src="assets/images/partners/isover.png" width="90%" alt="Isover" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/rigips.png" alt="Rigips">
+                <img src="assets/images/partners/rigips.png" width="90%" alt="Rigips" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/dek.png" alt="DEK Trade">
+                <img src="assets/images/partners/dek.png" width="90%" alt="DEK Trade" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/jaf.png" alt="JAF Holz">
+                <img src="assets/images/partners/jaf.png" width="90%" alt="JAF Holz" loading="lazy">
             </div>
         </div>
     </div>

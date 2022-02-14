@@ -133,11 +133,7 @@ nav #logo {
 
 /* -------------- REFERENCE -------------- */
 .filterClass {
-    float: left;
-    background-color: #2196F3;
     color: #ffffff;
-    width: 100px;
-    line-height: 100px;
     text-align: center;
     margin: 2px;
     display: none; /* Hidden by default */
@@ -148,7 +144,49 @@ nav #logo {
     display: block;
 }
 
+.reference-desc {
 
+}
+
+.hide {
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.reference-overlay {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.reference-overlay > img {
+    vertical-align: middle;
+}
+
+.reference-overlay::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #dc3545;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.reference-overlay:hover .hide {
+    display: flex;
+    align-items: center;
+}
+
+.reference-overlay:hover::before {
+    opacity: 0.8;
+}
 
 /* -------------- DODAVATELÉ -------------- */
 .dodavatele {
@@ -157,7 +195,6 @@ nav #logo {
 
 .dodavatele img {
     padding: 10px;
-    max-width: 90%;
     opacity: 0.3;
     transition: all 0.3s ease-out 0s;
     /* Vrstva šedé barvy, který překryje obrázek a na :hover zmizí */
