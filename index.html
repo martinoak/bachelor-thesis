@@ -25,7 +25,7 @@
 <body>
 <header role="banner">
     <!-- Navigace -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light"> <!-- TODO href sice odkazuje na sekci, ale nadpis neni videt, nastavit kazdy sekci pt?-->
         <div class="container d-flex align-items-start">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/logo.png" alt="Logo">
@@ -44,17 +44,22 @@
                         <a class="nav-link" aria-current="page" href="#certifikaty">Certifikáty</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle"
+                           href="#reference"
+                           id="navbarDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
                             Reference
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Střechy</a></li>
-                            <li><a class="dropdown-item" href="#">Podlahy</a></li>
-                            <li><a class="dropdown-item" href="#">Garáže</a></li>
-                            <li><a class="dropdown-item" href="#">Pergoly</a></li>
-                            <li><a class="dropdown-item" href="#">Štíty</a></li>
+                            <li><a class="dropdown-item" href="#reference">Střechy</a></li>
+                            <li><a class="dropdown-item" href="#reference">Podlahy</a></li>
+                            <li><a class="dropdown-item" href="#reference">Garáže</a></li>
+                            <li><a class="dropdown-item" href="#reference">Pergoly</a></li>
+                            <li><a class="dropdown-item" href="#reference">Štíty</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Ostatní</a></li>
+                            <li><a class="dropdown-item" href="#reference">Zobrazit vše</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -76,8 +81,9 @@
         <div class="text-center">
             <h1 class="header-title">Vaše střecha je náš problém!</h1>
             <h2>
-                <a class="reference-button text-decoration-none inline-d-flex align-items-center shadow-sm" href="#">
-                    Naše reference <i class="far fa-caret-right ms-2"></i> <!-- TODO na hover se text modrá -->
+                <a class="reference-button text-decoration-none inline-d-flex align-items-center shadow-sm"
+                   href="#reference">
+                    Naše reference <i class="far fa-caret-right ms-2"></i>
                 </a>
             </h2>
         </div>
@@ -99,35 +105,35 @@
                     <i class="fas fa-chimney"></i>
                 </div>
                 <h4>Střechy</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                <p>Lorem ipsum<br> dolor sit amet.</p> <!-- TODO Dodělat -->
             </div>
             <div class="services-detail col-6 col-md-4 col-lg-2">
                 <div class="services-icon">
                     <i class="fas fa-garage-car"></i>
                 </div>
                 <h4>Garáže</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                <p>Lorem ipsum<br> dolor sit amet.</p> <!-- TODO Dodělat -->
             </div>
             <div class="services-detail col-6 col-md-4 col-lg-2">
                 <div class="services-icon">
                     <i class="fas fa-layer-group"></i>
                 </div>
                 <h4>Podlahy</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                <p>Lorem ipsum<br> dolor sit amet.</p> <!-- TODO Dodělat -->
             </div>
             <div class="services-detail col-6 col-md-4 col-lg-2">
                 <div class="services-icon">
                     <i class="fas fa-store-alt"></i>
                 </div>
                 <h4>Pergoly</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                <p>Lorem ipsum<br> dolor sit amet.</p> <!-- TODO Dodělat -->
             </div>
             <div class="services-detail col-6 col-md-4 col-lg-2">
                 <div class="services-icon">
                     <i class="fas fa-triangle"></i>
                 </div>
                 <h4>Štíty</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                <p>Lorem ipsum<br> dolor sit amet.</p> <!-- TODO Dodělat -->
             </div>
             <div class="services-detail col-6 col-md-4 col-lg-2">
                 <div class="services-icon">
@@ -135,7 +141,7 @@
                 </div>
                 <div class="services-content media-body">
                     <h4>Ostatní</h4>
-                    <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
+                    <p>Lorem ipsum<br> dolor sit amet.</p> <!-- TODO Dodělat -->
                 </div>
             </div>
         </div>
@@ -183,7 +189,17 @@
 <section id="reference" class="reference-area">
     <div class="container">
         <h3 class="font-weight-bold title">Reference</h3> <!-- TODO Dodělat -->
-        <br />
+        <div class="form-group col-md-4">
+            <i class="fas fa-filter color-primary me-3"></i>
+                <select class="custom-select col-6">
+                    <option selected>Vše</option>
+                    <option>Střechy</option>
+                    <option>Garáže</option>
+                    <option>Podlahy</option>
+                    <option>Pergoly</option>
+                    <option>Štíty</option>
+                </select>
+        </div>
         <div style="padding-top: 500px"></div>
     </div>
 </section>
@@ -205,10 +221,10 @@
                 <img src="assets/images/partners/rigips.png" alt="Rigips">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/dek.png" alt="Rigips">
+                <img src="assets/images/partners/dek.png" alt="DEK Trade">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/jaf.png" alt="Rigips">
+                <img src="assets/images/partners/jaf.png" alt="JAF Holz">
             </div>
         </div>
     </div>
@@ -229,7 +245,7 @@
                         jirfa.cz
                         </a>
                     </li>
-                    <li class="pt-2">
+                    <li class="pt-2 d-block d-md-none">
                         <a href="#" class="text-decoration-none"><i class="fas fa-map-marker-alt me-2"></i> Zobrazit mapu</a>
                     </li>
                 </ul>

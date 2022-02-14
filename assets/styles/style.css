@@ -19,6 +19,10 @@ hr {
     color: #dc3545 !important;
 }
 
+a:hover {
+    color: white !important;
+}
+
 img {
     max-width: 90%;
     margin: auto;
@@ -41,6 +45,10 @@ img {
     background-color: #0066ff;
 }
 
+button:hover {
+    background-color: #0066ff !important;
+}
+
 .title {
     margin-top: 20px;
     font-size: 30px;
@@ -50,7 +58,7 @@ img {
 
 /* -------------- HLAVIČKA -------------- */
 .header-title {
-    padding: 4rem 0;
+    padding: 8rem 0;
     font-size: 2.5rem;
     line-height: 3.5rem;
     color: black;
@@ -58,12 +66,28 @@ img {
 }
 
 /* -------------- NAVIGACE -------------- */
-nav {
-    margin: .5rem;
-}
-
 nav #logo {
     width: 7.5rem;
+}
+
+.nav-item:hover {
+    color: #0066ff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #dc3545 !important;
+}
+
+
+
+
+.dropdown-item {
+    font-weight: bold;
 }
 
 .reference-button {
@@ -76,13 +100,10 @@ nav #logo {
     background-color: #dc3545;
     height: 80px;
 }
-/*
-.reference-button:hover i:before {
 
-    color: white !important;
+.reference-button:hover i:before {
     content: "\f32d";
 }
-*/
 
 /* -------------- SLUŽBY -------------- */
 .services-area {
