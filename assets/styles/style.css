@@ -171,3 +171,23 @@ footer img {
     color: #6c6c6c;
     font-size: 1rem
 }
+
+/* -------------- BTT -------------- */
+#backToTop { /* Tlacitko co po kliknuti presune uzivatele na zacatek stranky*/
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #dc3545;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30px;
+    color: #fff; }
+#backToTop:hover {
+    background-color: #0067f4;
+    color: #fff; }
+
