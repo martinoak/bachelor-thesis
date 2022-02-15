@@ -45,7 +45,7 @@ img {
     background-color: #0066ff;
 }
 
-button:hover {
+#submitButton:hover {
     background-color: #0066ff !important;
 }
 
@@ -104,6 +104,11 @@ nav #logo {
 
 .reference-button:hover i:before {
     content: "\f32d";
+}
+
+.dropdown-item:hover {
+    background-color: #dc3545 !important;
+    color: white;
 }
 
 /* -------------- SLUŽBY -------------- */
@@ -193,6 +198,7 @@ nav #logo {
     margin: 0;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .reference-overlay > img {
