@@ -191,23 +191,22 @@
         <h3 class="font-weight-bold title">Reference</h3> <!-- TODO Dodělat -->
         <div class="form-group col-md-4">
             <i class="fas fa-filter color-primary me-3"></i>
-                <select class="custom-select col-6" onchange="filterSelection(this.value)">
-                    <option selected value="vse">Vše</option>
-                    <option value="strechy">Střechy</option>
-                    <option value="garaze">Garáže</option>
-                    <option value="podlahy">Podlahy</option>
-                    <option value="pergoly">Pergoly</option>
-                    <option value="stity">Štíty</option>
-                    <option value="ostatni">Ostatní</option>
-                </select>
+            <select class="custom-select col-6 col-md-10 col-lg-6" onchange="filterSelection(this.value)">
+                <option selected value="vse">Vše</option>
+                <option value="strechy">Střechy</option>
+                <option value="garaze">Garáže</option>
+                <option value="podlahy">Podlahy</option>
+                <option value="pergoly">Pergoly</option>
+                <option value="stity">Štíty</option>
+                <option value="ostatni">Ostatní</option>
+            </select>
         </div>
         <!-- TODO Pouze mobile-view -->
         <!-- TODO Jiné zobrazení pro vyfiltrované položky a všechny položky -->
         <div class="container d-flex m-auto">
             <div class="row justify-content-around">
                 <div class="my-5 col-12 col-md-6 col-lg-4 filterClass garaze"> <!-- TODO nefunguje col-sm a col-lg -->
-                    <span class="reference-overlay">
-                        <!-- TODO Vymyslet lépe -->
+                    <div class="reference-overlay">
                         <div class="reference-desc hide w-100 h-100">
                             <ul class="lst-none p-0 m-auto">
                                 <li class="fw-bold fs-1">Garáž Praha-Pankrác</li>
@@ -216,10 +215,10 @@
                             </ul>
                         </div>
                         <img src="assets/images/reference/garaze/01.jpg" class="w-100" alt=""/>
-                    </span>
+                    </div>
                 </div>
                 <div class="my-5 col-12 col-md-6 col-lg-4 filterClass strechy"> <!-- TODO nefunguje col-sm a col-lg -->
-                    <span class="reference-overlay">
+                    <div class="reference-overlay">
                         <!-- TODO Vymyslet lépe -->
                         <div class="reference-desc hide w-100 h-100">
                             <ul class="lst-none p-0 m-auto">
@@ -229,7 +228,7 @@
                             </ul>
                         </div>
                         <img src="assets/images/reference/strechy/01.jpg" class="w-100" alt=""/>
-                    </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,22 +241,22 @@
         <h3 class="font-weight-bold title">Partneři a dodavatelé</h3> <!-- TODO Dodělat -->
         <div class="row dodavatele justify-content-around">
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/bramac.png" width="90%" alt="Bramac" loading="lazy">
+                <img src="assets/images/partners/bramac.png" alt="Bramac" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/velux.png" width="90%" alt="Velux" loading="lazy">
+                <img src="assets/images/partners/velux.png" alt="Velux" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/isover.png" width="90%" alt="Isover" loading="lazy">
+                <img src="assets/images/partners/isover.png" alt="Isover" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/rigips.png" width="90%" alt="Rigips" loading="lazy">
+                <img src="assets/images/partners/rigips.png" alt="Rigips" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/dek.png" width="90%" alt="DEK Trade" loading="lazy">
+                <img src="assets/images/partners/dek.png" alt="DEK Trade" loading="lazy">
             </div>
             <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/images/partners/jaf.png" width="90%" alt="JAF Holz" loading="lazy">
+                <img src="assets/images/partners/jafholz.png" alt="JAF Holz" loading="lazy">
             </div>
         </div>
     </div>
@@ -269,10 +268,10 @@
         <div class="row">
             <div class="col-5">
                 <ul class="lst-none p-0">
-                    <li>JIRFA, s.r.o.</li>
-                    <li><strong>V Rovinách 55</strong></li>
-                    <li><strong>140 00</strong></li>
-                    <li><strong>Praha 4</strong></li>
+                    <li><strong>JIRFA, s.r.o.</strong></li>
+                    <li>V Rovinách 55</li>
+                    <li>140 00</li>
+                    <li>Praha 4</li>
                     <li><a href="https://jirfa.cz" class="text-decoration-none color-secondary link">
                         <i class="fas fa-globe color-secondary me-2"></i>
                         jirfa.cz
@@ -285,7 +284,7 @@
             </div>
             <div class="col-7 ps-3">
                 <div class="mb-3">
-                    <a><strong>Jednatelé:</strong></a>
+                    <p><strong>Jednatelé:</strong></p>
                 </div>
                 <div class="mb-3">
                     <ul class="lst-none p-0">

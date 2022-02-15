@@ -201,6 +201,26 @@ nav #logo {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+
+    @media screen and (min-width: 576px) and (max-width: 768px) {
+        .dodavatele img {
+            width: 15rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        .dodavatele img {
+            width: 18rem;
+            margin: .5rem 0;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .dodavatele img {
+            width: 25rem;
+        }
+    }
+
 .dodavatele img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0%);
