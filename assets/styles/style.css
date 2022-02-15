@@ -144,8 +144,40 @@ nav #logo {
     display: block;
 }
 
-.reference-desc {
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .reference-desc-title {
+        font-size: 1.5rem !important;
+    }
+    .reference-desc-menu {
+        font-size: 1rem !important;
+    }
+}
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .reference-desc-title {
+        font-size: 1.5rem !important;
+    }
+    .reference-desc-menu {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .reference-desc-title {
+        font-size: 1.5rem !important;
+    }
+    .reference-desc-menu {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reference-desc-title {
+        font-size: 2rem !important;
+    }
+    .reference-desc-menu {
+        font-size: 1rem !important;
+    }
 }
 
 .hide {
