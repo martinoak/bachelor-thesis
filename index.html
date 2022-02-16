@@ -191,6 +191,7 @@
         <h3 class="font-weight-bold title">Reference</h3> <!-- TODO Dodělat -->
         <div class="col-md-4">
             <i class="fas fa-filter color-primary me-3"></i>
+                                                                <!-- TODO Substituce za eventListener? -->
             <select class="custom-select col-6 col-md-10 col-lg-6" onchange="filterSelection(this.value)">
                 <option selected value="vse">Vše</option>
                 <option value="strechy">Střechy</option>
@@ -279,6 +280,10 @@
                     <li>V Rovinách 55</li>
                     <li>140 00</li>
                     <li>Praha 4</li>
+                    <li class="pt-2">
+                                                 <!-- TODO Přidat tlačítko na zkopírování do schránky? -->
+                        <p class="text-decoration-none"><i class="fas fa-briefcase"></i> IČO: 27143287</p>
+                    </li>
                     <li><a href="https://jirfa.cz" class="text-decoration-none color-secondary link">
                         <i class="fas fa-globe color-secondary me-2"></i>
                         jirfa.cz
@@ -364,7 +369,7 @@
             <div class="row d-flex">
                 <div class="copyright">
                     <p class="text"><img src="assets/images/logo.png" alt="Logo">
-                        <strong>&copy;</strong> <script>document.write(/\d{4}/.exec(Date())[0])</script> Martin Dub, JIRFA s.r.o.
+                        <strong>&copy;</strong> <!-- <script>document.write(/\d{4}/.exec(Date())[0])</script> -->2022 Martin Dub, JIRFA s.r.o.
                     </p>
                 </div>
             </div>
