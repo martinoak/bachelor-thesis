@@ -42,7 +42,7 @@ img {
 }
 
 .bg-secondary {
-    background-color: #0066ff;
+    background-color: #0066ff !important;
 }
 
 #submitButton:hover {
@@ -98,12 +98,27 @@ nav #logo {
     height: 80px;
 }
 
+.reference-button-small {
+    padding: .5rem;
+    border-radius: 7px;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #dc3545;
+    height: 20px;
+}
+
 .reference-button:hover {
     color: white !important;
 }
 
 .reference-button:hover i:before {
     content: "\f32d";
+}
+
+.reference-button-small:hover {
+    color: white !important;
 }
 
 .dropdown-item:hover {
@@ -134,6 +149,7 @@ nav #logo {
 
 .certificate-img {
     cursor: zoom-in;
+    border: 1px solid darkgray;
 }
 
 /* -------------- REFERENCE -------------- */
