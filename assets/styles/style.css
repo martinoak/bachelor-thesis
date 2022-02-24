@@ -270,6 +270,12 @@ nav #logo {
     list-style-type: none;
 }
 
+@media screen and (max-width: 374px) {
+    .phone-icon {
+        display: none;
+    }
+}
+
 /* -------------- FOOTER -------------- */
 footer {
 
