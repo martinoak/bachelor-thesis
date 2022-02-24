@@ -164,6 +164,10 @@ nav #logo {
     display: block;
 }
 
+.reference-desc {
+    color: white;
+}
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .reference-desc-title {
         font-size: 1.5rem !important;
