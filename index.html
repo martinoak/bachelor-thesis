@@ -53,11 +53,11 @@
                             Reference
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#reference">Střechy</a></li>
-                            <li><a class="dropdown-item" href="#reference">Podlahy</a></li>
-                            <li><a class="dropdown-item" href="#reference">Garáže</a></li>
-                            <li><a class="dropdown-item" href="#reference">Pergoly</a></li>
-                            <li><a class="dropdown-item" href="#reference">Štíty</a></li>
+                            <li><a class="dropdown-item" data-value="strechy" href="#reference">Střechy</a></li>
+                            <li><a class="dropdown-item" data-value="podlahy" href="#reference">Podlahy</a></li>
+                            <li><a class="dropdown-item" data-value="garaze" href="#reference">Garáže</a></li>
+                            <li><a class="dropdown-item" data-value="pergoly" href="#reference">Pergoly</a></li>
+                            <li><a class="dropdown-item" data-value="stity" href="#reference">Štíty</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#reference">Zobrazit vše</a></li>
                         </ul>
@@ -105,7 +105,7 @@
                     <i class="fas fa-chimney"></i>
                 </div>
                 <h4 class="mb-3">Střechy</h4>
-                <a class="reference-button-small bg-secondary text-decoration-none inline-d-flex align-items-center shadow-sm"
+                <a class="reference-button-small text-decoration-none inline-d-flex align-items-center shadow-sm"
                       href="#reference">
                     Reference <i class="far fa-caret-right ms-2"></i>
                 </a> <!-- TODO Dodělat -->
@@ -115,7 +115,7 @@
                     <i class="fas fa-garage-car"></i>
                 </div>
                 <h4 class="mb-3">Garáže</h4>
-                <a class="reference-button-small bg-secondary text-decoration-none inline-d-flex align-items-center shadow-sm"
+                <a class="reference-button-small text-decoration-none inline-d-flex align-items-center shadow-sm"
                    href="#reference">
                     Reference <i class="far fa-caret-right ms-2"></i>
                 </a> <!-- TODO Dodělat -->
@@ -125,7 +125,7 @@
                     <i class="fas fa-layer-group"></i>
                 </div>
                 <h4 class="mb-3">Podlahy</h4>
-                <a class="reference-button-small bg-secondary text-decoration-none inline-d-flex align-items-center shadow-sm"
+                <a class="reference-button-small text-decoration-none inline-d-flex align-items-center shadow-sm"
                    href="#reference">
                     Reference <i class="far fa-caret-right ms-2"></i>
                 </a> <!-- TODO Dodělat -->
@@ -135,7 +135,7 @@
                     <i class="fas fa-store-alt"></i>
                 </div>
                 <h4 class="mb-3">Pergoly</h4>
-                <a class="reference-button-small bg-secondary text-decoration-none inline-d-flex align-items-center shadow-sm"
+                <a class="reference-button-small  text-decoration-none inline-d-flex align-items-center shadow-sm"
                    href="#reference">
                     Reference <i class="far fa-caret-right ms-2"></i>
                 </a> <!-- TODO Dodělat -->
@@ -145,7 +145,7 @@
                     <i class="fas fa-triangle"></i>
                 </div>
                 <h4 class="mb-3">Štíty</h4>
-                <a class="reference-button-small bg-secondary text-decoration-none inline-d-flex align-items-center shadow-sm"
+                <a class="reference-button-small text-decoration-none inline-d-flex align-items-center shadow-sm"
                    href="#reference">
                     Reference <i class="far fa-caret-right ms-2"></i>
                 </a> <!-- TODO Dodělat -->
@@ -155,7 +155,7 @@
                     <i class="fas fa-plus"></i>
                 </div>
                 <h4 class="mb-3">Ostatní</h4>
-                <a class="reference-button-small bg-secondary text-decoration-none inline-d-flex align-items-center shadow-sm"
+                <a class="reference-button-small text-decoration-none inline-d-flex align-items-center shadow-sm"
                    href="#reference">
                     Reference <i class="far fa-caret-right ms-2"></i>
                 </a> <!-- TODO Dodělat -->
@@ -208,7 +208,7 @@
         <div class="col-md-4">
             <i class="fas fa-filter color-primary me-3"></i>
                                                                 <!-- TODO Substituce za eventListener? -->
-            <select class="custom-select col-6 col-md-10 col-lg-6" onchange="filterSelection(this.value)">
+            <select class="custom-select col-6 col-md-10 col-lg-6" id="selectType">
                 <option selected value="vse">Vše</option>
                 <option value="strechy">Střechy</option>
                 <option value="garaze">Garáže</option>
@@ -219,6 +219,7 @@
             </select>
         </div>
             <div class="row justify-content-around">
+            <div class="row justify-content-around">
                 <div class="my-5 col-12 col-md-6 col-lg-4 filterClass garaze">
                     <div class="reference-overlay">
                         <div class="reference-desc hide w-100 h-100">
@@ -228,7 +229,7 @@
                                 <li class="reference-desc-menu">Zobrazit</li>
                             </ul>
                         </div>
-                        <img src="assets/images/reference/garaze/01.jpg" width="325" height="271" class="w-100" alt=""/>
+                        <img src="assets/images/reference/garaze/01.jpg" width="325" height="271" class="w-100 reference-img" alt=""/>
                     </div>
                 </div>
                 <div class="my-5 col-12 col-md-6 col-lg-4 filterClass pergoly">
@@ -240,7 +241,7 @@
                                 <li class="reference-desc-menu">Zobrazit</li>
                             </ul>
                         </div>
-                        <img src="assets/images/reference/pergoly/01.jpg" width="325" height="271" class="w-100" alt=""/>
+                        <img src="assets/images/reference/pergoly/01.jpg" width="325" height="271" class="w-100 reference-img" alt=""/>
                     </div>
                 </div>
                 <div class="my-5 col-12 col-md-6 col-lg-4 filterClass strechy">
@@ -252,7 +253,7 @@
                                 <li class="reference-desc-menu">Zobrazit</li>
                             </ul>
                         </div>
-                        <img src="assets/images/reference/strechy/01.jpg" width="325" height="271" class="w-100" alt=""/>
+                        <img src="assets/images/reference/strechy/01.jpg" width="325" height="271" class="w-100 reference-img" alt=""/>
                     </div>
                 </div>
             </div>

@@ -156,7 +156,6 @@ nav #logo {
 .filterClass {
     color: #ffffff;
     text-align: center;
-    margin: 2px;
     display: none; /* Hidden by default */
 }
 
@@ -240,6 +239,10 @@ nav #logo {
 
 .reference-overlay:hover::before {
     opacity: 0.8;
+}
+
+reference-img {
+    object-fit: cover;
 }
 
 /* -------------- DODAVATELÉ -------------- */
