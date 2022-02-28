@@ -24,7 +24,6 @@ hr {
 }
 
 img {
-    max-width: 90%;
     margin: auto;
     display: block;
 }
@@ -247,6 +246,7 @@ nav #logo {
 
 reference-img {
     object-fit: cover;
+    max-width: 100% !important;
 }
 
 /* -------------- DODAVATELÉ -------------- */
@@ -261,6 +261,7 @@ reference-img {
     /* Vrstva šedé barvy, který překryje obrázek a na :hover zmizí */
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    max-width: 90%;
 }
 
     @media screen and (min-width: 576px) and (max-width: 768px) {
