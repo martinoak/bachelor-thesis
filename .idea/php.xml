@@ -3,6 +3,8 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$USER_HOME$/Downloads/php-8.1.3-nts-Win32-vs16-x64" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
 </project>
