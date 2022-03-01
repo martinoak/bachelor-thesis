@@ -65,7 +65,7 @@ img {
 }
 
 .hero {
-    background-image: url("/assets/images/hero.webp");
+    background-image: url("/assets/images/hero.jpg");
     height: 457px;
     background-position: center;
     background-size: cover;
