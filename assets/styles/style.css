@@ -149,6 +149,15 @@ nav #logo {
 .certificate-img {
     cursor: zoom-in;
     border: 1px solid darkgray;
+    max-width: 90%;
+}
+
+.certificate-hr {
+    padding-top: 3px;
+    opacity: 0.8;
+    max-width: 90%;
+   display: block;
+    margin: 15px auto;
 }
 
 /* -------------- REFERENCE -------------- */
