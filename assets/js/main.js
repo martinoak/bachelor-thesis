@@ -1,12 +1,8 @@
 //Get the button:
 mybutton = document.getElementById("backToTop");
 
-/** Nastav celýmu dokumentu event listener, který poslouchá, až se načte DOM, pak zavolá funkci loadAfterDom */
 document.addEventListener("DOMContentLoaded", loadAfterDom);
 
-/**
- * Nastav filterSelection kvuli filtru, ziskej vsechny navigacni tagy co jsou v dropdownu a kazdemu z nich nastav event listener na click, selectu nastav event listener na change
- */
 function loadAfterDom() {
     filterSelection("vse");
     const elements = document.getElementsByClassName("dropdown-item");
@@ -16,22 +12,24 @@ function loadAfterDom() {
     document
         .getElementById("selectType")
         .addEventListener("change", selectChange);
+
+        const form = document.getElementById("form")
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const formData = new FormData(form)
+            await fetch("actions/action.php", {
+                method: "POST",
+                body: formData
+            })
+        });
 }
 
-/**
- * Ziskej z konkretniho navigacniho elementu atribut, ktery lze ziskat z event objektu, nastav filterSelection dle hodnoty atributu a nastav i select
- * @param {*} event Event objekt
- */
 function navigationItemClick(event) {
     let value = event.target.getAttribute("data-value");
     filterSelection(value);
     document.getElementById("selectType").value = value;
 }
 
-/**
- * Nastav hodnotu selectu pri jeho zmene
- * @param {*} event Event objekt
- */
 function selectChange(event) {
     let value = event.target.value;
     filterSelection(value);

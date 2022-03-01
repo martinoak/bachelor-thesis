@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Stavební firma JIRFA s.r.o. | Vaše střecha je náš problém!">
+    <meta name="theme-color" content="#dc3545">
 
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
@@ -62,7 +63,7 @@
                             <li><a class="dropdown-item" data-value="pergoly" href="#reference">Pergoly</a></li>
                             <li><a class="dropdown-item" data-value="stity" href="#reference">Štíty</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#reference">Zobrazit vše</a></li>
+                            <li><a class="dropdown-item" data-value="vse" href="#reference">Zobrazit vše</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -500,37 +501,37 @@
             </div>
             <div class="col-12 col-md-6">
                 <h4>Ozvěte se nám!</h4>
-                <form>
+                <form id="form">
                     <div class="form-row">
                         <div class="form-group col-md-10">
                             <label for="name">Vaše jméno a příjmení</label>
-                            <input type="text" class="form-control" id="name" placeholder="Jan Novák">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Jan Novák" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-10">
-                            <label for="inputEmail4">Váš e-mail</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="jan@novak.cz">
+                            <label for="inputEmail">Váš e-mail</label>
+                            <input type="email" class="form-control" id="inputEmail" name="email" placeholder="jan@novak.cz" required>
                         </div>
                     </div>
                     <div class="form-group col-md-10">
                         <label for="tel">Váš telefon</label>
-                        <input type="text" class="form-control" id="tel" placeholder="+420 123 456 789">
+                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="+420 123 456 789" required>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-7">
+                    <div class="row">
+                        <div class="form-group col-md-5">
                             <label for="inputCity">Město</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input type="text" class="form-control" name="city" id="inputCity">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="inputZip">PSČ</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <input type="text" class="form-control" name="zip" id="inputZip">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-10">
                             <label for="text">Text zprávy</label>
-                            <textarea rows="5" class="form-control" id="text" placeholder="Dobrý den!"></textarea>
+                            <textarea rows="5" class="form-control" id="text" name="textmessage" placeholder="Dobrý den!" required></textarea>
                         </div>
                     </div>
                     <button id="submitButton"
