@@ -65,7 +65,7 @@ img {
 }
 
 .hero {
-    background-image: url("/assets/images/hero.jpg");
+    background-image: url("https://raw.githubusercontent.com/MarvelousMartin/bachelor-thesis/master/assets/images/hero.webp");
     height: 457px;
     background-position: center;
     background-size: cover;

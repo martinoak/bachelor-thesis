@@ -24,7 +24,8 @@ if($_POST["zip"]) {
 $content_body = '<b>Přišla nová zpráva:</b><br>
                 Poptávající: ' .$content_name.'<br>
                 Telefon: '.$content_tel.'<br>
-                Text zprávy:<br><br>'.$content_textmessage;
+                Text zprávy:<br><br>'.$content_textmessage.'<br>
+                <img src="https://raw.githubusercontent.com/MarvelousMartin/bachelor-thesis/master/assets/images/logo.png">';
 
 try {
     $mail->CharSet = 'UTF-8';
