@@ -120,7 +120,7 @@ nav #logo {
 }
 
 .reference-button:hover i:before {
-    content: "\f32d";
+    content: "\f32d"
 }
 
 .reference-button-small:hover {
