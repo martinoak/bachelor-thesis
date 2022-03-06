@@ -1,11 +1,11 @@
-//Get the button:
+//Získání tlačítka:
 mybutton = document.getElementById("backToTop");
 
 document.addEventListener("DOMContentLoaded", loadAfterDom);
 
 function loadAfterDom() {
     filterSelection("vse");
-    const elements = document.getElementsByClassName("dropdown-item");
+    const elements = document.querySelectorAll(".dropdown-item, .reference-button-small");
     for (let index = 0; index < elements.length; index++) {
         elements[index].addEventListener("click", navigationItemClick);
     }
@@ -35,7 +35,7 @@ function selectChange(event) {
     filterSelection(value);
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Pokud uživatel udělá scroll down větší než 20 pixelů, ukáže se back to top tlačítko
 window.onscroll = function () {
     scrollFunction();
 };
@@ -51,10 +51,10 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Pokud uživatel klikne na tlařítko, přesměruje jej to zpět nahoru
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // Pro Safari
+    document.documentElement.scrollTop = 0; // Pro Chrome, Firefox, IE a Opera prohlížeče
 }
 // ----------------------
 // Filtr výběru reference
@@ -62,27 +62,27 @@ function topFunction() {
 function filterSelection(value) {
     var x, i;
     x = document.getElementsByClassName("filterClass");
-    if (value == "vse") value = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    if (value === "vse") value = "";
+    // Přidej třídu show (display:block) k vyfiltrovaným elementům a odstraň "show" od elementů které nebyly vybrány
     for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
         if (x[i].className.indexOf(value) > -1) w3AddClass(x[i], "show");
     }
 }
 
-// Show filtered elements
+// Ukaž vyfiltrované elementy
 function w3AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
     for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
+        if (arr1.indexOf(arr2[i]) === -1) {
             element.className += " " + arr2[i];
         }
     }
 }
 
-// Hide elements that are not selected
+// Schovej elementy které nebyly vybrány
 function w3RemoveClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");

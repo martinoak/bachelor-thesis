@@ -3,7 +3,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: #121212;
+    color: #121212
 }
 
 * {
@@ -16,43 +16,43 @@ body {
 }
 
 hr {
-    color: #dc3545 !important;
+    color: #dc3545 !important
 }
 
 .link:hover {
-    font-weight: bold !important;
+    font-weight: bold !important
 }
 
 img {
     margin: auto;
-    display: block;
+    display: block
 }
 
 .color-primary {
-    color: #dc3545 !important;
+    color: #dc3545 !important
 }
 
 .bg-primary {
-    background-color: #dc3545 !important;
+    background-color: #dc3545 !important
 }
 
 .color-secondary {
-    color: #0066ff;
+    color: #0066ff
 }
 
 .bg-secondary {
-    background-color: #0066ff !important;
+    background-color: #0066ff !important
 }
 
 #submitButton:hover {
-    background-color: #0066ff !important;
+    background-color: #0066ff !important
 }
 
 .title {
     padding-top: 70px;
     font-size: 30px;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: 500
 }
 
 /* -------------- HLAVIČKA -------------- */
@@ -61,47 +61,47 @@ img {
     font-size: 2.5rem;
     line-height: 3.5rem;
     color: white;
-    font-weight: 800;
+    font-weight: 800
 }
 
 .hero {
     background-image: url("https://raw.githubusercontent.com/MarvelousMartin/bachelor-thesis/master/assets/images/hero.webp");
     height: 457px;
     background-position: center;
-    background-size: cover;
+    background-size: cover
 }
 
 /* -------------- NAVIGACE -------------- */
 nav #logo {
-    width: 7.5rem;
+    width: 7.5rem
 }
 
 .nav-item:hover {
-    color: #0066ff !important;
+    color: #0066ff !important
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-weight: bold;
+    font-weight: bold
 }
 
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #dc3545 !important;
+    color: #dc3545 !important
 }
 
 .dropdown-item {
-    font-weight: bold;
+    font-weight: bold
 }
 
 .reference-button {
-    padding: 1rem 2rem; /* vycentrovani tlacitka */
+    padding: 1rem 2rem; /* Vycentrování tlačítka */
     border-radius: 8px;
     overflow: hidden;
     color: white;
     font-weight: bold;
     font-size: 24px;
     background-color: #dc3545;
-    height: 80px;
+    height: 80px
 }
 
 .reference-button-small {
@@ -112,11 +112,11 @@ nav #logo {
     font-weight: bold;
     font-size: 14px;
     background-color: #dc3545;
-    height: 20px;
+    height: 20px
 }
 
 .reference-button:hover {
-    color: white !important;
+    color: white !important
 }
 
 .reference-button:hover i:before {
@@ -124,38 +124,38 @@ nav #logo {
 }
 
 .reference-button-small:hover {
-    color: white !important;
+    color: white !important
 }
 
 .dropdown-item:hover {
     background-color: #dc3545 !important;
-    color: white;
+    color: white
 }
 
 /* -------------- SLUŽBY -------------- */
 .services-area {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 .services-detail {
-    padding: 10px;
+    padding: 10px
 }
 
 .services-content .services-icon i {
     color: #dc3545;
     font-size: 42px;
-    margin: 1rem 0;
+    margin: 1rem 0
 }
 
 /* -------------- CERTIFIKÁTY -------------- */
 .certificate-area {
     padding-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .certificate-img {
     cursor: zoom-in;
     border: 1px solid darkgray;
-    max-width: 90%;
+    max-width: 90%
 }
 
 .certificate-hr {
@@ -163,58 +163,58 @@ nav #logo {
     opacity: 0.8;
     max-width: 90%;
    display: block;
-    margin: 15px auto;
+    margin: 15px auto
 }
 
 /* -------------- REFERENCE -------------- */
 .filterClass {
     color: #ffffff;
     text-align: center;
-    display: none; /* Hidden by default */
+    display: none /* Výchozí nastavení - schované */
 }
 
-/* The "show" class is added to the filtered elements */
+/* Třída "show" je přidána k filtrovaným elementům */
 .show {
-    display: block;
+    display: block
 }
 
 .reference-desc {
-    color: white;
+    color: white
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .reference-desc-title {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem !important
     }
     .reference-desc-menu {
-        font-size: 1rem !important;
+        font-size: 1rem !important
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .reference-desc-title {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem !important
     }
     .reference-desc-menu {
-        font-size: 1rem !important;
+        font-size: 1rem !important
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .reference-desc-title {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem !important
     }
     .reference-desc-menu {
-        font-size: 1rem !important;
+        font-size: 1rem !important
     }
 }
 
 @media screen and (min-width: 1200px) {
     .reference-desc-title {
-        font-size: 2rem !important;
+        font-size: 2rem !important
     }
     .reference-desc-menu {
-        font-size: 1rem !important;
+        font-size: 1rem !important
     }
 }
 
@@ -223,7 +223,7 @@ nav #logo {
     float: left;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0
 }
 
 .reference-overlay {
@@ -231,11 +231,11 @@ nav #logo {
     margin: 0;
     position: relative;
     display: inline-block;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .reference-overlay > img {
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .reference-overlay::before {
@@ -247,26 +247,26 @@ nav #logo {
     height: 100%;
     background: #dc3545;
     opacity: 0;
-    transition: .5s ease;
+    transition: .5s ease
 }
 
 .reference-overlay:hover .hide {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .reference-overlay:hover::before {
-    opacity: 0.8;
+    opacity: 0.8
 }
 
-reference-img {
+.reference-img {
     object-fit: cover;
-    max-width: 100% !important;
+    max-width: 100% !important
 }
 
 /* -------------- DODAVATELÉ -------------- */
 .dodavatele {
-    margin-top: 24px;
+    margin-top: 24px
 }
 
 .dodavatele img {
@@ -276,53 +276,49 @@ reference-img {
     /* Vrstva šedé barvy, který překryje obrázek a na :hover zmizí */
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    max-width: 90%;
+    max-width: 90%
 }
 
     @media screen and (min-width: 576px) and (max-width: 768px) {
         .dodavatele img {
-            width: 15rem;
+            width: 15rem
         }
     }
 
     @media screen and (min-width: 768px) and (max-width: 992px) {
         .dodavatele img {
             width: 18rem;
-            margin: .5rem 0;
+            margin: .5rem 0
         }
     }
 
     @media screen and (min-width: 992px) {
         .dodavatele img {
-            width: 25rem;
+            width: 25rem
         }
     }
 
 .dodavatele img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    filter: grayscale(0%)
 }
 
 /* -------------- KONTAKTY -------------- */
 .lst-none {
-    list-style-type: none;
+    list-style-type: none
 }
 
 @media screen and (max-width: 374px) {
     .phone-icon {
-        display: none;
+        display: none
     }
 }
 
 /* -------------- FOOTER -------------- */
-footer {
-
-}
-
 footer img {
     max-width: 5rem;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .copyright {
@@ -347,8 +343,9 @@ footer img {
     right: 30px;
     z-index: 99;
     font-size: 30px;
-    color: #fff; }
+    color: #fff
+}
 #backToTop:hover {
     background-color: #0067f4;
-    color: #fff; }
-
+    color: #fff
+}
