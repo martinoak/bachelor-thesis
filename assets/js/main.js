@@ -61,7 +61,7 @@ function topFunction() {
 // ----------------------
 function filterSelection(value) {
     var x, i;
-    x = document.getElementsByClassName("filterClass");
+    x = document.querySelectorAll(".filterClass, .reference-button-small");
     if (value === "vse") value = "";
     // Přidej třídu show (display:block) k vyfiltrovaným elementům a odstraň "show" od elementů které nebyly vybrány
     for (i = 0; i < x.length; i++) {
