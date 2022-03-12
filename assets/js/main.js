@@ -13,15 +13,23 @@ function loadAfterDom() {
         .getElementById("selectType")
         .addEventListener("change", selectChange);
 
-        const form = document.getElementById("form")
-        form.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const formData = new FormData(form)
-            await fetch("actions/action.php", {
-                method: "POST",
-                body: formData
-            })
-        });
+    const form = document.getElementById("form")
+    form.addEventListener("submit", async (event) => {
+        const mailSuccess = document.getElementById("mailSuccess")
+        event.preventDefault();
+        const formData = new FormData(form)
+        const response = await fetch("actions/action.php", {
+            method: "POST",
+            body: formData
+        })
+        if (response.ok) {
+            mailSuccess.classList.add("color-secondary");
+            mailSuccess.innerText = "Email byl uspesne odeslan";
+        } else {
+            mailSuccess.classList.add("color-primary");
+            mailSuccess.innerText = "Pri odesilani emailu nastala chyba";
+        }
+    });
 }
 
 function navigationItemClick(event) {
@@ -56,6 +64,7 @@ function topFunction() {
     document.body.scrollTop = 0; // Pro Safari
     document.documentElement.scrollTop = 0; // Pro Chrome, Firefox, IE a Opera prohlížeče
 }
+
 // ----------------------
 // Filtr výběru reference
 // ----------------------
