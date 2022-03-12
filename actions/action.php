@@ -35,7 +35,7 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'yda44277@gmail.com';
     /** dočasný e-mail */
-    $mail->Password = 'Vce98aEdDZSRm48ZRmTUJ7ue8hRwxxYimn7M3S5L1';
+    $mail->Password = 'Vce98aEdDZSRm48ZRmTUJ7ue8hRwxxYimn7M3S5L';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
