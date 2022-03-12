@@ -24,10 +24,12 @@ function loadAfterDom() {
         })
         if (response.ok) {
             mailSuccess.classList.add("color-secondary");
-            mailSuccess.innerText = "Zpráva poslána!";
+            mailSuccess.innerText = "";
+            mailSuccess.innerText = "Email byl úspěšně odeslán!";
         } else {
             mailSuccess.classList.add("color-primary");
-            mailSuccess.innerText = "Nepodařilo se poslat e-mail.";
+            mailSuccess.innerText = "";
+            mailSuccess.innerText = "Při odesílání e-mailu nastala chyba!";
         }
     });
 }
