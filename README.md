@@ -14,7 +14,14 @@
 
 
 ## O projektu
+###Instalace
+Po stáhnutí projektu přes `git clone` nebo jako `.zip` soubor je potřeba doinstalovat na počítač
+dependencies (závislosti) přes příkaz
 
+```composer install```
+
+a poté zkopírovat `.env.example` do nově vytvořeného souboru `.env` a změnit hodnoty **FILL-IT-HERE** za hodnoty funkční
+e-mailové adresy. 
 
 ### Frameworky
 
@@ -23,13 +30,7 @@ Následující frameworky budou použity v bakalářské práci:
 
 ## Licence
 
-Distribuováno pod záštitou **MIT licence**.
-
-
-## Kontakt
-
-Martin Dub - [LinkedIn](https://www.linkedin.com/in/martin-dub/)
-
+Distribuováno pod záštitou licence **MIT**.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Poděkování
