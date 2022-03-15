@@ -3,6 +3,8 @@
 
 .idea/
 
+.env
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml

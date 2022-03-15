@@ -4,7 +4,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php';
+
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+$dotenv->safeLoad();
 
 $mail = new PHPMailer(true);
 
@@ -12,7 +16,7 @@ if ($_POST["name"] and $_POST["email"] and $_POST["tel"] and $_POST["textmessage
     $content_name = $_POST["name"];
     $content_email = $_POST["email"];
     $content_tel = $_POST["tel"];
-    $content_textMessage = $_POST["textMessage"];
+    $content_textMessage = $_POST["textmessage"];
 }
 if ($_POST["city"]) {
     $content_city = $_POST["city"];
@@ -34,8 +38,8 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     /** dočasný e-mail */
-    $mail->Username = 'yda44277@gmail.com';
-    $mail->Password = 'Vce98aEdDZSRm48ZRmTUJ7ue8hRwxxYimn7M3S5L';
+    $mail->Username = $_ENV['EMAIL'];
+    $mail->Password = $_ENV['PASSWORD'];
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
