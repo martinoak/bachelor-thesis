@@ -14,7 +14,7 @@
 
 
 ## O projektu
-###Instalace
+### Instalace
 Po stáhnutí projektu přes `git clone` nebo jako `.zip` soubor je potřeba doinstalovat na počítač
 dependencies (závislosti) přes příkaz
 
