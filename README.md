@@ -1,5 +1,7 @@
 [![MIT License][license-shield]][license-url]
 
+# DISCONTINUED PROJECT
+Due to recent change in my PHP knowledge, this repository is archived and following project is maintained [here](https://github.com/martinoak/jirfa).
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
